@@ -1,27 +1,46 @@
 fileFormatVersion: 2
-guid: c75f57bed1259224390c45abfcc06bde
-timeCreated: 1462755431
+guid: 858738e54b1ddc943808a1131fbe2c2b
+timeCreated: 1463687009
 licenseType: Free
 ModelImporter:
-  serializedVersion: 18
+  serializedVersion: 19
   fileIDToRecycleName:
-    100000: Cube
-    100002: FAUCET
-    100004: Handle
-    100006: //RootNode
-    400000: Cube
-    400002: FAUCET
-    400004: Handle
-    400006: //RootNode
-    2300000: Cube
-    2300002: FAUCET
-    2300004: Handle
-    3300000: Cube
-    3300002: FAUCET
-    3300004: Handle
-    4300000: Handle
-    4300002: FAUCET
-    4300004: Cube
+    100000: //RootNode
+    100002: Camera
+    100004: Control
+    100006: Lamp
+    100008: Lever
+    100010: ShowerActivator
+    100012: ShowerHead
+    100014: Tub
+    100016: TubFaucet
+    400000: //RootNode
+    400002: Camera
+    400004: Control
+    400006: Lamp
+    400008: Lever
+    400010: ShowerActivator
+    400012: ShowerHead
+    400014: Tub
+    400016: TubFaucet
+    2300000: Control
+    2300002: Lever
+    2300004: ShowerActivator
+    2300006: ShowerHead
+    2300008: Tub
+    2300010: TubFaucet
+    3300000: Control
+    3300002: Lever
+    3300004: ShowerActivator
+    3300006: ShowerHead
+    3300008: Tub
+    3300010: TubFaucet
+    4300000: ShowerHead
+    4300002: Control
+    4300004: Lever
+    4300006: TubFaucet
+    4300008: ShowerActivator
+    4300010: Tub
   materials:
     importMaterials: 1
     materialName: 0
@@ -29,6 +48,7 @@ ModelImporter:
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
+    resampleRotations: 1
     optimizeGameObjects: 0
     motionNodeName: 
     animationImportErrors: 
@@ -36,9 +56,9 @@ ModelImporter:
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     animationCompression: 1
-    animationRotationError: .5
-    animationPositionError: .5
-    animationScaleError: .5
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
     clipAnimations: []
@@ -62,20 +82,19 @@ ModelImporter:
     useFileScale: 1
   tangentSpace:
     normalSmoothAngle: 60
-    splitTangentsAcrossUV: 1
     normalImportMode: 0
-    tangentImportMode: 1
+    tangentImportMode: 3
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
     human: []
     skeleton: []
-    armTwist: .5
-    foreArmTwist: .5
-    upperLegTwist: .5
-    legTwist: .5
-    armStretch: .0500000007
-    legStretch: .0500000007
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
     feetSpacing: 0
     rootMotionBoneName: 
     hasTranslationDoF: 0
