@@ -2,7 +2,6 @@
 using System.Collections;
 
 public class PlayerController : MonoBehaviour {
-
     public float speed;
     public float maxVelocityChange;
     public float jumpSpeed;
