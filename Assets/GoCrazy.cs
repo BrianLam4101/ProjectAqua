@@ -11,7 +11,7 @@ public class GoCrazy : MonoBehaviour {
     // Use this for initialization
     void Start () {
         slider = GetComponent<Slider>();
-        text = GetComponentInChildren<Text>();
+        //text = GetComponentInChildren<Text>();
     }
 	
 	// Update is called once per frame
@@ -26,6 +26,6 @@ public class GoCrazy : MonoBehaviour {
             velocity = 0;
         }
         slider.value = value;
-        text.text = ((int)(value * 100)).ToString();
+        //text.text = ((int)(value * 100)).ToString();
     }
 }
