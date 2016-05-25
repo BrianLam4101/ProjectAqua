@@ -1,32 +1,37 @@
 fileFormatVersion: 2
 guid: 38c12df7608a3a645926b7c7009d07ef
-timeCreated: 1463687830
+timeCreated: 1464154459
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
     100000: Control
-    100002: Lever
-    100004: //RootNode
-    100006: Sink
-    100008: SinkFaucet
+    100002: Drain
+    100004: Lever
+    100006: //RootNode
+    100008: Sink
+    100010: SinkFaucet
     400000: Control
-    400002: Lever
-    400004: //RootNode
-    400006: Sink
-    400008: SinkFaucet
+    400002: Drain
+    400004: Lever
+    400006: //RootNode
+    400008: Sink
+    400010: SinkFaucet
     2300000: Control
-    2300002: Lever
-    2300004: Sink
-    2300006: SinkFaucet
+    2300002: Drain
+    2300004: Lever
+    2300006: Sink
+    2300008: SinkFaucet
     3300000: Control
-    3300002: Lever
-    3300004: Sink
-    3300006: SinkFaucet
-    4300000: Control
-    4300002: Lever
-    4300004: SinkFaucet
-    4300006: Sink
+    3300002: Drain
+    3300004: Lever
+    3300006: Sink
+    3300008: SinkFaucet
+    4300000: Drain
+    4300002: Control
+    4300004: Lever
+    4300006: SinkFaucet
+    4300008: Sink
   materials:
     importMaterials: 1
     materialName: 0

@@ -1,92 +1,72 @@
 fileFormatVersion: 2
 guid: 6a6c4add569f6d14686c358b685e3dc0
-timeCreated: 1463714973
+timeCreated: 1464154459
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: Floor
-    100002: //RootNode
-    100004: Person Size
-    100006: Wall
-    100008: Wall.001
-    100010: Wall.002
-    100012: Wall.003
-    100014: Wall.004
-    100016: Wall.005
-    100018: BathDoor
-    100020: BathDoor.001
-    100022: Wall.006
-    100024: Wall.007
-    100026: BedRoomWall
-    100028: BedRoomWall.001
-    100030: BedRoomWall.002
-    100032: BedRoomWall.003
-    400000: Floor
-    400002: //RootNode
-    400004: Person Size
-    400006: Wall
-    400008: Wall.001
-    400010: Wall.002
-    400012: Wall.003
-    400014: Wall.004
-    400016: Wall.005
-    400018: BathDoor
-    400020: BathDoor.001
-    400022: Wall.006
-    400024: Wall.007
-    400026: BedRoomWall
-    400028: BedRoomWall.001
-    400030: BedRoomWall.002
-    400032: BedRoomWall.003
-    2300000: Floor
-    2300002: Person Size
-    2300004: Wall
-    2300006: Wall.001
-    2300008: Wall.002
-    2300010: Wall.003
-    2300012: Wall.004
-    2300014: Wall.005
-    2300016: BathDoor
-    2300018: BathDoor.001
-    2300020: Wall.006
-    2300022: Wall.007
-    2300024: BedRoomWall
-    2300026: BedRoomWall.001
-    2300028: BedRoomWall.002
-    2300030: BedRoomWall.003
-    3300000: Floor
-    3300002: Person Size
-    3300004: Wall
-    3300006: Wall.001
-    3300008: Wall.002
-    3300010: Wall.003
-    3300012: Wall.004
-    3300014: Wall.005
-    3300016: BathDoor
-    3300018: BathDoor.001
-    3300020: Wall.006
-    3300022: Wall.007
-    3300024: BedRoomWall
-    3300026: BedRoomWall.001
-    3300028: BedRoomWall.002
-    3300030: BedRoomWall.003
-    4300000: Wall.005
-    4300002: Wall.004
-    4300004: Wall.003
-    4300006: Wall.002
-    4300008: Wall.001
-    4300010: Person Size
-    4300012: Wall
-    4300014: Floor
-    4300016: Wall.007
-    4300018: Wall.006
-    4300020: BathDoor
-    4300022: BathDoor.001
-    4300024: BedRoomWall.003
-    4300026: BedRoomWall.002
-    4300028: BedRoomWall
-    4300030: BedRoomWall.001
+    100000: BathDoor
+    100002: BathDoor.001
+    100004: BedRoomWall
+    100006: BedRoomWall.001
+    100008: BedRoomWall.002
+    100010: BedRoomWall.003
+    100012: Floor
+    100014: //RootNode
+    100016: Person Size
+    100018: Wall
+    100020: Wall.001
+    100022: Wall.002
+    100024: Wall.003
+    400000: BathDoor
+    400002: BathDoor.001
+    400004: BedRoomWall
+    400006: BedRoomWall.001
+    400008: BedRoomWall.002
+    400010: BedRoomWall.003
+    400012: Floor
+    400014: //RootNode
+    400016: Person Size
+    400018: Wall
+    400020: Wall.001
+    400022: Wall.002
+    400024: Wall.003
+    2300000: BathDoor
+    2300002: BathDoor.001
+    2300004: BedRoomWall
+    2300006: BedRoomWall.001
+    2300008: BedRoomWall.002
+    2300010: BedRoomWall.003
+    2300012: Floor
+    2300014: Person Size
+    2300016: Wall
+    2300018: Wall.001
+    2300020: Wall.002
+    2300022: Wall.003
+    3300000: BathDoor
+    3300002: BathDoor.001
+    3300004: BedRoomWall
+    3300006: BedRoomWall.001
+    3300008: BedRoomWall.002
+    3300010: BedRoomWall.003
+    3300012: Floor
+    3300014: Person Size
+    3300016: Wall
+    3300018: Wall.001
+    3300020: Wall.002
+    3300022: Wall.003
+    4300000: BedRoomWall.003
+    4300002: BedRoomWall.002
+    4300004: BedRoomWall
+    4300006: BedRoomWall.001
+    4300008: BathDoor
+    4300010: BathDoor.001
+    4300012: Person Size
+    4300014: Wall
+    4300016: Wall.003
+    4300018: Wall.002
+    4300020: Wall.001
+    4300022: Floor
   materials:
     importMaterials: 1
     materialName: 0
