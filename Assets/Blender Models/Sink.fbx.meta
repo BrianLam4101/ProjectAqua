@@ -11,27 +11,32 @@ ModelImporter:
     100006: //RootNode
     100008: Sink
     100010: SinkFaucet
+    100012: FAUCET
     400000: Control
     400002: Drain
     400004: Lever
     400006: //RootNode
     400008: Sink
     400010: SinkFaucet
+    400012: FAUCET
     2300000: Control
     2300002: Drain
     2300004: Lever
     2300006: Sink
     2300008: SinkFaucet
+    2300010: FAUCET
     3300000: Control
     3300002: Drain
     3300004: Lever
     3300006: Sink
     3300008: SinkFaucet
+    3300010: FAUCET
     4300000: Drain
     4300002: Control
     4300004: Lever
     4300006: SinkFaucet
     4300008: Sink
+    4300010: FAUCET
   materials:
     importMaterials: 1
     materialName: 0
