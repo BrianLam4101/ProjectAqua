@@ -11,7 +11,10 @@ public class ObjectInteraction : MonoBehaviour {
         if ((Physics.Raycast(this.transform.position, this.transform.forward, out fphit, distance)) && (fphit.collider.gameObject.CompareTag("Appliance")) && Input.GetMouseButtonDown(0))
         {
             Debug.Log("got an appliance and left-click" + " | " + fphit.collider.gameObject);
-            fphit.collider.GetComponent<Appliance>().appUse();
+            foreach (Appliance x in fphit.collider.GetComponents<Appliance>())
+            {
+                x.appUse();
+            }
         }
 	}
 }
