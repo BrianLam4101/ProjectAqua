@@ -17,6 +17,7 @@ public class sasdasdf : MonoBehaviour {
 	    if (Input.GetKey(KeyCode.Mouse1)) {
             waterHolder.waterLevel -= 0.1f;
             GameObject drop = Instantiate<GameObject>(water);
+            drop.transform.SetParent(GameObject.Find("PlayerWater").transform);
             drop.transform.position = gameObject.transform.position + transform.forward * 1f;
             drop.transform.rotation = gameObject.transform.rotation;
             drop.GetComponent<Rigidbody>().AddForce(transform.TransformDirection(Vector3.forward) * 10, ForceMode.VelocityChange);

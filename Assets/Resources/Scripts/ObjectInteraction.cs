@@ -7,8 +7,8 @@ public class ObjectInteraction : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-        
-        if ((Physics.Raycast(this.transform.position, this.transform.forward, out fphit, distance)) && (fphit.collider.gameObject.CompareTag("Appliance")) && Input.GetMouseButtonDown(0))
+        var layerMask = (1 << 4) + (5 << 8);
+        if ((Physics.Raycast(this.transform.position, this.transform.forward, out fphit, distance, ~layerMask)) && (fphit.collider.gameObject.CompareTag("Appliance")) && Input.GetMouseButton(0))
         {
             Debug.Log("got an appliance and left-click" + " | " + fphit.collider.gameObject);
             foreach (Appliance x in fphit.collider.GetComponents<Appliance>())
