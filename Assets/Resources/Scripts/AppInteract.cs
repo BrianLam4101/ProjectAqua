@@ -8,7 +8,7 @@ public class AppInteract : Appliance {
     private GameObject water_pref;
     private Transform faucet;
     StatHolder waterHolder;
-    private bool on;
+    private float on;
 
     void Start() {
         waterHolder = GameObject.Find("WaterLevel").GetComponent<StatHolder>();
@@ -17,17 +17,24 @@ public class AppInteract : Appliance {
     }
 
     void FixedUpdate() {
-        if (on && waterHolder.wasteWater(waterUsage * Time.fixedDeltaTime)) {
-            GameObject water = Instantiate<GameObject>(water_pref);
-            water.transform.localScale = water.transform.localScale * waterScale;
-            water.transform.SetParent(faucet);
-            Debug.Log(water.transform);
-            water.transform.position = faucet.position + new Vector3(0, -.11f, 0);
+        if (on > 0) {
+            if (waterHolder.wasteWater(waterUsage * on * Time.fixedDeltaTime)) {
+                GameObject water = Instantiate<GameObject>(water_pref);
+                water.transform.localScale = water.transform.localScale * waterScale;
+                water.transform.SetParent(faucet);
+                Debug.Log(water.transform);
+                water.transform.position = faucet.position + new Vector3(0, -.11f, 0);
+            }
+        } else if (Random.Range(0f, 100f) < 0.01f) {
+            on += 0.1f;
         }
     }
 
     public override void appUse()
     {
-        on = !on;
+        if (on > 0)
+            on = 0;
+        else
+            on = 1;
     }
 }
