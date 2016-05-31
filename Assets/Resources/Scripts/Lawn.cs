@@ -3,6 +3,7 @@ using System.Collections;
 
 public class Lawn : MonoBehaviour {
 
+    public float degenPerSec;
     private float waterLevel;
     private GameObject[] grass;
     private float num;
@@ -15,16 +16,19 @@ public class Lawn : MonoBehaviour {
             grass[i] = transform.GetChild(i).gameObject;
         }
         num = grass.Length / 100;
+        StartCoroutine("updateGrass", 0.5f);
 	}
 	
-	// Update is called once per frame
-	void FixedUpdate () {
-        waterLevel -= 1 * Time.deltaTime;
-        for (int i = 0; i < waterLevel * num; i++) {
-            grass[i].SetActive(true);
-        }
-        for (int i = transform.childCount - 1; i > waterLevel * num; i--) {
-            grass[i].SetActive(false);
+	IEnumerator updateGrass (float delay) {
+        while (true) {
+            waterLevel = Mathf.Clamp(waterLevel - (degenPerSec * delay), 0, 100);
+            for (int i = 0; i < waterLevel * num; i++) {
+                grass[i].SetActive(true);
+            }
+            for (int i = transform.childCount - 1; i > waterLevel * num; i--) {
+                grass[i].SetActive(false);
+            }
+            yield return new WaitForSeconds(Random.Range(delay * 0.8f, delay * 1.2f));
         }
     }
 

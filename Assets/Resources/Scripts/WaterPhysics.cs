@@ -42,6 +42,6 @@ public class WaterPhysics : MonoBehaviour {
 
     void OnCollisionEnter(Collision collision) {
         if (!collision.collider.CompareTag("Water") && Random.Range(0, 101) < 50)
-            AudioSource.PlayClipAtPoint(splashSound, transform.position, Random.Range(0.25f, 1f));
+            AudioSource.PlayClipAtPoint(splashSound, transform.position, gameObject.GetComponent<Rigidbody>().velocity.magnitude * 0.1f * Random.Range(0.25f, 1f));
     }
 }
