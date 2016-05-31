@@ -1,61 +1,32 @@
 fileFormatVersion: 2
-guid: 2362fab65310a3d4aa283274e9e17f41
-timeCreated: 1464154459
+guid: 893baaf18c124cb4c9c16b7a80f0d889
+timeCreated: 1464724901
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: Control
-    100002: Control.001
-    100004: Drain
-    100006: Drain.001
-    100008: //RootNode
-    100010: Lever
-    100012: Lever.001
-    100014: Sink
-    100016: Sink.001
-    100018: SinkFaucet
-    100020: Camera
-    100022: Sun
-    400000: Control
-    400002: Control.001
-    400004: Drain
-    400006: Drain.001
-    400008: //RootNode
-    400010: Lever
-    400012: Lever.001
-    400014: Sink
-    400016: Sink.001
-    400018: SinkFaucet
-    400020: Camera
-    400022: Sun
-    2300000: Control
-    2300002: Control.001
-    2300004: Drain
-    2300006: Drain.001
-    2300008: Lever
-    2300010: Lever.001
-    2300012: Sink
-    2300014: Sink.001
-    2300016: SinkFaucet
-    3300000: Control
-    3300002: Control.001
-    3300004: Drain
-    3300006: Drain.001
-    3300008: Lever
-    3300010: Lever.001
-    3300012: Sink
-    3300014: Sink.001
-    3300016: SinkFaucet
-    4300000: Drain.001
-    4300002: Control.001
-    4300004: Lever.001
-    4300006: Sink.001
-    4300008: Drain
-    4300010: Control
-    4300012: Lever
-    4300014: SinkFaucet
-    4300016: Sink
+    100000: Cylinder
+    100002: Seat
+    100004: //RootNode
+    100006: ToiletBase
+    100008: ToiletPump
+    400000: Cylinder
+    400002: Seat
+    400004: //RootNode
+    400006: ToiletBase
+    400008: ToiletPump
+    2300000: Cylinder
+    2300002: Seat
+    2300004: ToiletBase
+    2300006: ToiletPump
+    3300000: Cylinder
+    3300002: Seat
+    3300004: ToiletBase
+    3300006: ToiletPump
+    4300000: Cylinder
+    4300002: ToiletPump
+    4300004: Seat
+    4300006: ToiletBase
   materials:
     importMaterials: 1
     materialName: 0
