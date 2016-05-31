@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class sasdasdf : MonoBehaviour {
+public class SprayWater : MonoBehaviour {
 
     GameObject water;
     StatHolder waterHolder;
@@ -14,11 +14,10 @@ public class sasdasdf : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	    if (Input.GetKey(KeyCode.Mouse1)) {
-            waterHolder.waterLevel -= 0.1f;
+	    if (Input.GetKey(KeyCode.Mouse1) && waterHolder.wasteWater(0.1f)) {
             GameObject drop = Instantiate<GameObject>(water);
             drop.transform.SetParent(GameObject.Find("PlayerWater").transform);
-            drop.transform.position = gameObject.transform.position + transform.forward * 1f;
+            drop.transform.position = gameObject.transform.position + transform.forward * 0.5f + transform.up * -0.3f + transform.right * 0.2f;
             drop.transform.rotation = gameObject.transform.rotation;
             drop.GetComponent<Rigidbody>().AddForce(transform.TransformDirection(Vector3.forward) * 10, ForceMode.VelocityChange);
         }

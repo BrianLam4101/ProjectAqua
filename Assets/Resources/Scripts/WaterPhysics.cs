@@ -3,6 +3,7 @@ using System.Collections;
 
 public class WaterPhysics : MonoBehaviour {
 
+    public AudioClip splashSound;
     SphereCollider collider;
     float originalScale;
 
@@ -28,14 +29,19 @@ public class WaterPhysics : MonoBehaviour {
     }
 
     IEnumerator slowlyDissapear() {
-        yield return new WaitForSeconds(Random.Range(3f,4f));
+        yield return new WaitForSeconds(Random.Range(1f,2f));
         transform.localScale = new Vector3(transform.localScale.x * 0.98f, transform.localScale.x * 0.98f, transform.localScale.x * 0.98f);
         while (transform.localScale.x > originalScale*0.2f) {
-            float ratio = transform.localScale.x * Mathf.Pow(transform.localScale.x / originalScale, 0.2f);
+            float ratio = transform.localScale.x * Mathf.Pow(transform.localScale.x / originalScale, 0.25f);
             //float thing = transform.localScale.x - ((transform.localScale.x - ratio) * Time.deltaTime * 10);
             transform.localScale = new Vector3(ratio, ratio, ratio);
-            yield return new WaitForSeconds(0.1f);
+            yield return new WaitForSeconds(0.05f);
         }
         Destroy(gameObject);
+    }
+
+    void OnCollisionEnter(Collision collision) {
+        if (!collision.collider.CompareTag("Water") && Random.Range(0, 101) < 50)
+            AudioSource.PlayClipAtPoint(splashSound, transform.position, Random.Range(0.25f, 1f));
     }
 }
