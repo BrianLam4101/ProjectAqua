@@ -7,6 +7,7 @@ public class waterBar : MonoBehaviour {
     Slider slider;
     Text text;
     StatHolder waterHolder;
+    
 
     // Use this for initialization
     void Start () {
