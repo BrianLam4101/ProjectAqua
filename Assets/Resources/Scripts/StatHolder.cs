@@ -4,6 +4,10 @@ using System.Collections;
 public class StatHolder : MonoBehaviour {
 
     public float waterLevel;
+    public float hygiene;
+    public float hunger;
+    public float bladder;
+    public float tiredness;
 
 	// Use this for initialization
 	void Start () {

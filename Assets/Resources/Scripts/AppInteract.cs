@@ -22,8 +22,9 @@ public class AppInteract : Appliance {
                 GameObject water = Instantiate<GameObject>(water_pref);
                 water.transform.localScale = water.transform.localScale * waterScale;
                 water.transform.SetParent(faucet);
-                Debug.Log(water.transform);
+                //Debug.Log(water.transform);
                 water.transform.position = faucet.position + new Vector3(0, -.11f, 0);
+                water.GetComponent<Rigidbody>().velocity = Vector3.down * 4;
             }
         } else if (Random.Range(0f, 100f) < 0.01f) {
             on += 0.1f;
