@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class Lawn : MonoBehaviour {
 
@@ -15,11 +16,24 @@ public class Lawn : MonoBehaviour {
         for (int i = 0; i < transform.childCount; i++) {
             grass[i] = transform.GetChild(i).gameObject;
         }
+        grass = Randomize(grass);
         num = grass.Length / 100;
         StartCoroutine("updateGrass", 0.5f);
 	}
-	
-	IEnumerator updateGrass (float delay) {
+
+    GameObject[] Randomize(GameObject[] objects) {
+        List<GameObject> randomized = new List<GameObject>();
+        List<GameObject> original = new List<GameObject>(objects);
+        while (original.Count > 0) {
+            int index = Random.Range(0,original.Count);
+            randomized.Add(original[index]);
+            original.RemoveAt(index);
+        }
+
+        return randomized.ToArray();
+    }
+
+    IEnumerator updateGrass (float delay) {
         while (true) {
             waterLevel = Mathf.Clamp(waterLevel - (degenPerSec * delay), 0, 100);
             for (int i = 0; i < waterLevel * num; i++) {
