@@ -52,6 +52,11 @@ public class StatHolder : MonoBehaviour {
         }
     }
     public float happiness;
+
+    public float hungerPerSec;
+    public float hygienePerSec;
+    public float energyPerSec;
+    public float bladderPerSec;
     // Use this for initialization
     void Start () {
         hunger = 100;
@@ -59,7 +64,13 @@ public class StatHolder : MonoBehaviour {
         hygiene = 100;
         bladder = 100;
 
-	}
+        hungerPerSec = 0.5f;
+        hygienePerSec = 0.3f;
+        energyPerSec = 0.5f;
+        bladderPerSec = 0.6f;
+
+
+    }
 
     public bool wasteWater(float amount) {
         if (waterLevel >= amount) {
@@ -71,10 +82,10 @@ public class StatHolder : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        hunger -= Time.deltaTime * .25f;
-        hygiene -= Time.deltaTime * .15f;
-        energy -= Time.deltaTime * .25f;
-        bladder -= Time.deltaTime * .3f;
+        hunger -= Time.deltaTime * .5f;
+        hygiene -= Time.deltaTime * .3f;
+        energy -= Time.deltaTime * .5f;
+        bladder -= Time.deltaTime * .6f;
         
         happiness = (hunger + hygiene + energy + bladder) / 4;
 
