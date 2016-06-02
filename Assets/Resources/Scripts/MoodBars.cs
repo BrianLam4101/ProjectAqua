@@ -35,6 +35,9 @@ public class MoodBars : MonoBehaviour {
         {
             slider.value = statBar.bladder / 100;
         }
+        else if (Name == "Thirst") {
+            slider.value = statBar.thirst / 100;
+        }
 
     }
 }

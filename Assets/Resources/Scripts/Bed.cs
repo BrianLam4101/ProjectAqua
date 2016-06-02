@@ -26,15 +26,16 @@ public class Bed : Appliance {
         time.time += timeDiffrence;
         time.timeOfDay += timeDiffrence;
 
-        StartCoroutine("fadeDelayed", 0.1f);
+        StartCoroutine("fadeDelayed", 0.025f);
     }
 
     IEnumerator fadeDelayed (float delay) {
         fadeBlack.color = Color.black;
+        yield return new WaitForSeconds(delay);
         Color c = fadeBlack.color;
         while (fadeBlack.color.a > 0) {
             fadeBlack.color = c;
-            c.a -= 0.1f;
+            c.a -= 0.025f;
             yield return new WaitForSeconds(delay);
         }
     }

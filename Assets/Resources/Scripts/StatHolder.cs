@@ -51,12 +51,22 @@ public class StatHolder : MonoBehaviour {
             Energy = Mathf.Clamp(value, 0, 100);
         }
     }
+    private float Thirst;
+    public float thirst {
+        get {
+            return Thirst;
+        }
+        set {
+            Thirst = Mathf.Clamp(value, 0, 100);
+        }
+    }
     public float happiness;
 
     public float hungerPerSec;
     public float hygienePerSec;
     public float energyPerSec;
     public float bladderPerSec;
+    public float thirstPerSec;
 
     private GameObject player;
     private Vector3 prevPos;
@@ -66,11 +76,13 @@ public class StatHolder : MonoBehaviour {
         energy = 90;
         hygiene = 80;
         bladder = 60;
+        thirst = 75;
 
         hungerPerSec = 0.5f;
         hygienePerSec = 0.3f;
         energyPerSec = 0.5f;
         bladderPerSec = 0.6f;
+        thirstPerSec = 1f;
 
         player = GameObject.Find("Player");
         prevPos = player.transform.position;
@@ -86,17 +98,19 @@ public class StatHolder : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        hunger -= Time.deltaTime * .5f * (energy < 50 ? (energy < 5 ? 2f : 1.5f) : 1);
-        hygiene -= Time.deltaTime * .3f * (bladder < 33 ? (bladder < 5 ? 5f : 2.5f) : 1);
-        energy -= Time.deltaTime * .5f * (hunger < 50 ? (hunger < 5 ? 4 : 2) : 1);
-        bladder -= Time.deltaTime * .6f * (hunger > 75 ? (hunger > 95 ? 3f : 1.5f) : 1);
-        
+        hunger -= Time.deltaTime * hungerPerSec * (energy < 50 ? (energy < 5 ? 2f : 1.5f) : 1);
+        hygiene -= Time.deltaTime * hygienePerSec * (bladder < 33 ? (bladder < 5 ? 5f : 2.5f) : 1);
+        energy -= Time.deltaTime * energyPerSec * (hunger < 50 ? (hunger < 15 ? 4 : 2) : 1) * (thirst < 50 ? (thirst < 15 ? 6 : 3) : 1);
+        bladder -= Time.deltaTime * bladderPerSec * (hunger > 75 ? (hunger > 95 ? 3f : 1.5f) : 1);
+        thirst -= Time.deltaTime * thirstPerSec;
+
         happiness = (hunger + hygiene + energy + bladder) / 4;
 
     }
 
     void FixedUpdate() {
         energy -= Vector3.Distance(prevPos, player.transform.position) * 0.1f;
+        thirst -= Vector3.Distance(prevPos, player.transform.position) * 0.1f;
         prevPos = player.transform.position;
     }
 }
