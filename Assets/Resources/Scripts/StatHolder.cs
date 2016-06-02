@@ -71,7 +71,6 @@ public class StatHolder : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        waterLevel = Mathf.Clamp(waterLevel + Time.deltaTime, 0, 10000000000);
         hunger -= Time.deltaTime * .25f;
         hygiene -= Time.deltaTime * .15f;
         energy -= Time.deltaTime * .25f;
