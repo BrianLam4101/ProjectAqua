@@ -9,6 +9,9 @@ public class AppInteract : Appliance {
     private Transform faucet;
     StatHolder waterHolder;
     private float on;
+    public float hygieneUp;
+    public float hungerUp;
+    
 
     void Start() {
         waterHolder = GameObject.Find("WaterLevel").GetComponent<StatHolder>();
@@ -25,6 +28,12 @@ public class AppInteract : Appliance {
                 //Debug.Log(water.transform);
                 water.transform.position = faucet.position + new Vector3(0, -.11f, 0);
                 water.GetComponent<Rigidbody>().velocity = Vector3.down * 4;
+                if (Vector3.Distance(transform.position, GameObject.Find("Player").transform.position) < 5)
+                {
+                    waterHolder.hygiene += hygieneUp * Time.fixedDeltaTime;
+                    waterHolder.hunger += hungerUp;
+                }
+                    
             }
         } else if (Random.Range(0f, 100f) < 0.01f) {
             on += 0.1f;
