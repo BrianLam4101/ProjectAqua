@@ -35,6 +35,137 @@ ModelImporter:
     100054: Cube.001
     100056: RoofBack
     100058: RoofFront
+    100060: Fence Guard
+    100062: Fence Guard.001
+    100064: Fence Guard.002
+    100066: Fence Guard.003
+    100068: Fence Guard.004
+    100070: Fence Guard.005
+    100072: Fence Guard.006
+    100074: Fence Guard.007
+    100076: Fence Guard.008
+    100078: Fence Guard.009
+    100080: Fence Guard.010
+    100082: Fence Guard.011
+    100084: Fence Guard.012
+    100086: Fence Guard.013
+    100088: Fence Guard.014
+    100090: Fence Guard.015
+    100092: Fence Guard.016
+    100094: Fence Guard.017
+    100096: Fence Guard.018
+    100098: FenceBlock.000
+    100100: FenceBlock.001
+    100102: FenceBlock.002
+    100104: FenceBlock.003
+    100106: FenceBlock.004
+    100108: FenceBlock.005
+    100110: FenceBlock.006
+    100112: FenceBlock.007
+    100114: FenceBlock.008
+    100116: FenceBlock.009
+    100118: FenceBlock.010
+    100120: FenceBlock.011
+    100122: FenceBlock.012
+    100124: FenceBlock.013
+    100126: FenceBlock.014
+    100128: FenceBlock.015
+    100130: FenceBlock.016
+    100132: FenceBlock.017
+    100134: FenceBlock.018
+    100136: FenceBlock.019
+    100138: FenceBlock.020
+    100140: FenceBlock.021
+    100142: FenceBlock.022
+    100144: FenceBlock.023
+    100146: FenceBlock.024
+    100148: FenceBlock.025
+    100150: FenceBlock.026
+    100152: FenceBlock.027
+    100154: FenceBlock.028
+    100156: FenceBlock.029
+    100158: FenceBlock.030
+    100160: FenceBlock.031
+    100162: FenceBlock.032
+    100164: FenceBlock.033
+    100166: FenceBlock.034
+    100168: FenceBlock.035
+    100170: FenceBlock.036
+    100172: FenceBlock.037
+    100174: FenceBlock.038
+    100176: FenceBlock.039
+    100178: FenceBlock.040
+    100180: FenceBlock.041
+    100182: FenceBlock.042
+    100184: FenceBlock.043
+    100186: FenceBlock.044
+    100188: FenceBlock.045
+    100190: FenceBlock.046
+    100192: FenceBlock.047
+    100194: FenceBlock.048
+    100196: FenceBlock.049
+    100198: FenceBlock.051
+    100200: FenceBlock.054
+    100202: FenceBlock.055
+    100204: FenceBlock.056
+    100206: FenceBlock.057
+    100208: FenceBlock.058
+    100210: FenceBlock.059
+    100212: FenceBlock.060
+    100214: FenceBlock.061
+    100216: FenceBlock.062
+    100218: FenceBlock.063
+    100220: FenceBlock.064
+    100222: FenceBlock.065
+    100224: FenceBlock.066
+    100226: FenceBlock.067
+    100228: FenceBlock.068
+    100230: FenceBlock.069
+    100232: FenceBlock.070
+    100234: FenceBlock.071
+    100236: FenceBlock.072
+    100238: FenceBlock.073
+    100240: FenceBlock.074
+    100242: FenceBlock.075
+    100244: FenceBlock.076
+    100246: FenceBlock.077
+    100248: FenceBlock.078
+    100250: FenceBlock.079
+    100252: FenceBlock.080
+    100254: FenceBlock.081
+    100256: FenceBlock.082
+    100258: FenceBlock.083
+    100260: FenceBlock.084
+    100262: FenceBlock.085
+    100264: FenceBlock.086
+    100266: FenceBlock.087
+    100268: FenceBlock.088
+    100270: FenceBlock.089
+    100272: FenceBlock.090
+    100274: FenceBlock.091
+    100276: FenceBlock.092
+    100278: FenceBlock.093
+    100280: FenceBlock.094
+    100282: FenceBlock.095
+    100284: FenceBlock.096
+    100286: FenceBlock.097
+    100288: FenceBlock.098
+    100290: FenceBlock.099
+    100292: FenceBlock.100
+    100294: FenceBlock.101
+    100296: FenceBlock.102
+    100298: FenceBlock.103
+    100300: FenceBlock.104
+    100302: FenceBlock.105
+    100304: FenceBlock.106
+    100306: FenceBlock.107
+    100308: FenceBlock.108
+    100310: FenceBlock.109
+    100312: FenceBlock.110
+    100314: FenceBlock.111
+    100316: FenceBlock.112
+    100318: FenceBlock.113
+    100320: Light
     400000: BathDoor
     400002: BathDoor.001
     400004: BedRoomWall
@@ -65,6 +196,137 @@ ModelImporter:
     400054: Cube.001
     400056: RoofBack
     400058: RoofFront
+    400060: Fence Guard
+    400062: Fence Guard.001
+    400064: Fence Guard.002
+    400066: Fence Guard.003
+    400068: Fence Guard.004
+    400070: Fence Guard.005
+    400072: Fence Guard.006
+    400074: Fence Guard.007
+    400076: Fence Guard.008
+    400078: Fence Guard.009
+    400080: Fence Guard.010
+    400082: Fence Guard.011
+    400084: Fence Guard.012
+    400086: Fence Guard.013
+    400088: Fence Guard.014
+    400090: Fence Guard.015
+    400092: Fence Guard.016
+    400094: Fence Guard.017
+    400096: Fence Guard.018
+    400098: FenceBlock.000
+    400100: FenceBlock.001
+    400102: FenceBlock.002
+    400104: FenceBlock.003
+    400106: FenceBlock.004
+    400108: FenceBlock.005
+    400110: FenceBlock.006
+    400112: FenceBlock.007
+    400114: FenceBlock.008
+    400116: FenceBlock.009
+    400118: FenceBlock.010
+    400120: FenceBlock.011
+    400122: FenceBlock.012
+    400124: FenceBlock.013
+    400126: FenceBlock.014
+    400128: FenceBlock.015
+    400130: FenceBlock.016
+    400132: FenceBlock.017
+    400134: FenceBlock.018
+    400136: FenceBlock.019
+    400138: FenceBlock.020
+    400140: FenceBlock.021
+    400142: FenceBlock.022
+    400144: FenceBlock.023
+    400146: FenceBlock.024
+    400148: FenceBlock.025
+    400150: FenceBlock.026
+    400152: FenceBlock.027
+    400154: FenceBlock.028
+    400156: FenceBlock.029
+    400158: FenceBlock.030
+    400160: FenceBlock.031
+    400162: FenceBlock.032
+    400164: FenceBlock.033
+    400166: FenceBlock.034
+    400168: FenceBlock.035
+    400170: FenceBlock.036
+    400172: FenceBlock.037
+    400174: FenceBlock.038
+    400176: FenceBlock.039
+    400178: FenceBlock.040
+    400180: FenceBlock.041
+    400182: FenceBlock.042
+    400184: FenceBlock.043
+    400186: FenceBlock.044
+    400188: FenceBlock.045
+    400190: FenceBlock.046
+    400192: FenceBlock.047
+    400194: FenceBlock.048
+    400196: FenceBlock.049
+    400198: FenceBlock.051
+    400200: FenceBlock.054
+    400202: FenceBlock.055
+    400204: FenceBlock.056
+    400206: FenceBlock.057
+    400208: FenceBlock.058
+    400210: FenceBlock.059
+    400212: FenceBlock.060
+    400214: FenceBlock.061
+    400216: FenceBlock.062
+    400218: FenceBlock.063
+    400220: FenceBlock.064
+    400222: FenceBlock.065
+    400224: FenceBlock.066
+    400226: FenceBlock.067
+    400228: FenceBlock.068
+    400230: FenceBlock.069
+    400232: FenceBlock.070
+    400234: FenceBlock.071
+    400236: FenceBlock.072
+    400238: FenceBlock.073
+    400240: FenceBlock.074
+    400242: FenceBlock.075
+    400244: FenceBlock.076
+    400246: FenceBlock.077
+    400248: FenceBlock.078
+    400250: FenceBlock.079
+    400252: FenceBlock.080
+    400254: FenceBlock.081
+    400256: FenceBlock.082
+    400258: FenceBlock.083
+    400260: FenceBlock.084
+    400262: FenceBlock.085
+    400264: FenceBlock.086
+    400266: FenceBlock.087
+    400268: FenceBlock.088
+    400270: FenceBlock.089
+    400272: FenceBlock.090
+    400274: FenceBlock.091
+    400276: FenceBlock.092
+    400278: FenceBlock.093
+    400280: FenceBlock.094
+    400282: FenceBlock.095
+    400284: FenceBlock.096
+    400286: FenceBlock.097
+    400288: FenceBlock.098
+    400290: FenceBlock.099
+    400292: FenceBlock.100
+    400294: FenceBlock.101
+    400296: FenceBlock.102
+    400298: FenceBlock.103
+    400300: FenceBlock.104
+    400302: FenceBlock.105
+    400304: FenceBlock.106
+    400306: FenceBlock.107
+    400308: FenceBlock.108
+    400310: FenceBlock.109
+    400312: FenceBlock.110
+    400314: FenceBlock.111
+    400316: FenceBlock.112
+    400318: FenceBlock.113
+    400320: Light
     2300000: BathDoor
     2300002: BathDoor.001
     2300004: BedRoomWall
@@ -92,6 +354,137 @@ ModelImporter:
     2300048: Cube.001
     2300050: RoofBack
     2300052: RoofFront
+    2300054: Fence Guard
+    2300056: Fence Guard.001
+    2300058: Fence Guard.002
+    2300060: Fence Guard.003
+    2300062: Fence Guard.004
+    2300064: Fence Guard.005
+    2300066: Fence Guard.006
+    2300068: Fence Guard.007
+    2300070: Fence Guard.008
+    2300072: Fence Guard.009
+    2300074: Fence Guard.010
+    2300076: Fence Guard.011
+    2300078: Fence Guard.012
+    2300080: Fence Guard.013
+    2300082: Fence Guard.014
+    2300084: Fence Guard.015
+    2300086: Fence Guard.016
+    2300088: Fence Guard.017
+    2300090: Fence Guard.018
+    2300092: FenceBlock.000
+    2300094: FenceBlock.001
+    2300096: FenceBlock.002
+    2300098: FenceBlock.003
+    2300100: FenceBlock.004
+    2300102: FenceBlock.005
+    2300104: FenceBlock.006
+    2300106: FenceBlock.007
+    2300108: FenceBlock.008
+    2300110: FenceBlock.009
+    2300112: FenceBlock.010
+    2300114: FenceBlock.011
+    2300116: FenceBlock.012
+    2300118: FenceBlock.013
+    2300120: FenceBlock.014
+    2300122: FenceBlock.015
+    2300124: FenceBlock.016
+    2300126: FenceBlock.017
+    2300128: FenceBlock.018
+    2300130: FenceBlock.019
+    2300132: FenceBlock.020
+    2300134: FenceBlock.021
+    2300136: FenceBlock.022
+    2300138: FenceBlock.023
+    2300140: FenceBlock.024
+    2300142: FenceBlock.025
+    2300144: FenceBlock.026
+    2300146: FenceBlock.027
+    2300148: FenceBlock.028
+    2300150: FenceBlock.029
+    2300152: FenceBlock.030
+    2300154: FenceBlock.031
+    2300156: FenceBlock.032
+    2300158: FenceBlock.033
+    2300160: FenceBlock.034
+    2300162: FenceBlock.035
+    2300164: FenceBlock.036
+    2300166: FenceBlock.037
+    2300168: FenceBlock.038
+    2300170: FenceBlock.039
+    2300172: FenceBlock.040
+    2300174: FenceBlock.041
+    2300176: FenceBlock.042
+    2300178: FenceBlock.043
+    2300180: FenceBlock.044
+    2300182: FenceBlock.045
+    2300184: FenceBlock.046
+    2300186: FenceBlock.047
+    2300188: FenceBlock.048
+    2300190: FenceBlock.049
+    2300192: FenceBlock.051
+    2300194: FenceBlock.054
+    2300196: FenceBlock.055
+    2300198: FenceBlock.056
+    2300200: FenceBlock.057
+    2300202: FenceBlock.058
+    2300204: FenceBlock.059
+    2300206: FenceBlock.060
+    2300208: FenceBlock.061
+    2300210: FenceBlock.062
+    2300212: FenceBlock.063
+    2300214: FenceBlock.064
+    2300216: FenceBlock.065
+    2300218: FenceBlock.066
+    2300220: FenceBlock.067
+    2300222: FenceBlock.068
+    2300224: FenceBlock.069
+    2300226: FenceBlock.070
+    2300228: FenceBlock.071
+    2300230: FenceBlock.072
+    2300232: FenceBlock.073
+    2300234: FenceBlock.074
+    2300236: FenceBlock.075
+    2300238: FenceBlock.076
+    2300240: FenceBlock.077
+    2300242: FenceBlock.078
+    2300244: FenceBlock.079
+    2300246: FenceBlock.080
+    2300248: FenceBlock.081
+    2300250: FenceBlock.082
+    2300252: FenceBlock.083
+    2300254: FenceBlock.084
+    2300256: FenceBlock.085
+    2300258: FenceBlock.086
+    2300260: FenceBlock.087
+    2300262: FenceBlock.088
+    2300264: FenceBlock.089
+    2300266: FenceBlock.090
+    2300268: FenceBlock.091
+    2300270: FenceBlock.092
+    2300272: FenceBlock.093
+    2300274: FenceBlock.094
+    2300276: FenceBlock.095
+    2300278: FenceBlock.096
+    2300280: FenceBlock.097
+    2300282: FenceBlock.098
+    2300284: FenceBlock.099
+    2300286: FenceBlock.100
+    2300288: FenceBlock.101
+    2300290: FenceBlock.102
+    2300292: FenceBlock.103
+    2300294: FenceBlock.104
+    2300296: FenceBlock.105
+    2300298: FenceBlock.106
+    2300300: FenceBlock.107
+    2300302: FenceBlock.108
+    2300304: FenceBlock.109
+    2300306: FenceBlock.110
+    2300308: FenceBlock.111
+    2300310: FenceBlock.112
+    2300312: FenceBlock.113
+    2300314: Light
     3300000: BathDoor
     3300002: BathDoor.001
     3300004: BedRoomWall
@@ -119,6 +512,137 @@ ModelImporter:
     3300048: Cube.001
     3300050: RoofBack
     3300052: RoofFront
+    3300054: Fence Guard
+    3300056: Fence Guard.001
+    3300058: Fence Guard.002
+    3300060: Fence Guard.003
+    3300062: Fence Guard.004
+    3300064: Fence Guard.005
+    3300066: Fence Guard.006
+    3300068: Fence Guard.007
+    3300070: Fence Guard.008
+    3300072: Fence Guard.009
+    3300074: Fence Guard.010
+    3300076: Fence Guard.011
+    3300078: Fence Guard.012
+    3300080: Fence Guard.013
+    3300082: Fence Guard.014
+    3300084: Fence Guard.015
+    3300086: Fence Guard.016
+    3300088: Fence Guard.017
+    3300090: Fence Guard.018
+    3300092: FenceBlock.000
+    3300094: FenceBlock.001
+    3300096: FenceBlock.002
+    3300098: FenceBlock.003
+    3300100: FenceBlock.004
+    3300102: FenceBlock.005
+    3300104: FenceBlock.006
+    3300106: FenceBlock.007
+    3300108: FenceBlock.008
+    3300110: FenceBlock.009
+    3300112: FenceBlock.010
+    3300114: FenceBlock.011
+    3300116: FenceBlock.012
+    3300118: FenceBlock.013
+    3300120: FenceBlock.014
+    3300122: FenceBlock.015
+    3300124: FenceBlock.016
+    3300126: FenceBlock.017
+    3300128: FenceBlock.018
+    3300130: FenceBlock.019
+    3300132: FenceBlock.020
+    3300134: FenceBlock.021
+    3300136: FenceBlock.022
+    3300138: FenceBlock.023
+    3300140: FenceBlock.024
+    3300142: FenceBlock.025
+    3300144: FenceBlock.026
+    3300146: FenceBlock.027
+    3300148: FenceBlock.028
+    3300150: FenceBlock.029
+    3300152: FenceBlock.030
+    3300154: FenceBlock.031
+    3300156: FenceBlock.032
+    3300158: FenceBlock.033
+    3300160: FenceBlock.034
+    3300162: FenceBlock.035
+    3300164: FenceBlock.036
+    3300166: FenceBlock.037
+    3300168: FenceBlock.038
+    3300170: FenceBlock.039
+    3300172: FenceBlock.040
+    3300174: FenceBlock.041
+    3300176: FenceBlock.042
+    3300178: FenceBlock.043
+    3300180: FenceBlock.044
+    3300182: FenceBlock.045
+    3300184: FenceBlock.046
+    3300186: FenceBlock.047
+    3300188: FenceBlock.048
+    3300190: FenceBlock.049
+    3300192: FenceBlock.051
+    3300194: FenceBlock.054
+    3300196: FenceBlock.055
+    3300198: FenceBlock.056
+    3300200: FenceBlock.057
+    3300202: FenceBlock.058
+    3300204: FenceBlock.059
+    3300206: FenceBlock.060
+    3300208: FenceBlock.061
+    3300210: FenceBlock.062
+    3300212: FenceBlock.063
+    3300214: FenceBlock.064
+    3300216: FenceBlock.065
+    3300218: FenceBlock.066
+    3300220: FenceBlock.067
+    3300222: FenceBlock.068
+    3300224: FenceBlock.069
+    3300226: FenceBlock.070
+    3300228: FenceBlock.071
+    3300230: FenceBlock.072
+    3300232: FenceBlock.073
+    3300234: FenceBlock.074
+    3300236: FenceBlock.075
+    3300238: FenceBlock.076
+    3300240: FenceBlock.077
+    3300242: FenceBlock.078
+    3300244: FenceBlock.079
+    3300246: FenceBlock.080
+    3300248: FenceBlock.081
+    3300250: FenceBlock.082
+    3300252: FenceBlock.083
+    3300254: FenceBlock.084
+    3300256: FenceBlock.085
+    3300258: FenceBlock.086
+    3300260: FenceBlock.087
+    3300262: FenceBlock.088
+    3300264: FenceBlock.089
+    3300266: FenceBlock.090
+    3300268: FenceBlock.091
+    3300270: FenceBlock.092
+    3300272: FenceBlock.093
+    3300274: FenceBlock.094
+    3300276: FenceBlock.095
+    3300278: FenceBlock.096
+    3300280: FenceBlock.097
+    3300282: FenceBlock.098
+    3300284: FenceBlock.099
+    3300286: FenceBlock.100
+    3300288: FenceBlock.101
+    3300290: FenceBlock.102
+    3300292: FenceBlock.103
+    3300294: FenceBlock.104
+    3300296: FenceBlock.105
+    3300298: FenceBlock.106
+    3300300: FenceBlock.107
+    3300302: FenceBlock.108
+    3300304: FenceBlock.109
+    3300306: FenceBlock.110
+    3300308: FenceBlock.111
+    3300310: FenceBlock.112
+    3300312: FenceBlock.113
+    3300314: Light
     4300000: BedRoomWall.003
     4300002: BedRoomWall.002
     4300004: BedRoomWall
@@ -146,6 +670,137 @@ ModelImporter:
     4300048: Cube.001
     4300050: RoofFront
     4300052: RoofBack
+    4300054: Fence Guard.018
+    4300056: FenceBlock.113
+    4300058: FenceBlock.112
+    4300060: FenceBlock.111
+    4300062: FenceBlock.110
+    4300064: FenceBlock.109
+    4300066: FenceBlock.108
+    4300068: FenceBlock.107
+    4300070: FenceBlock.106
+    4300072: FenceBlock.105
+    4300074: FenceBlock.104
+    4300076: FenceBlock.103
+    4300078: FenceBlock.102
+    4300080: FenceBlock.101
+    4300082: FenceBlock.100
+    4300084: FenceBlock.099
+    4300086: FenceBlock.098
+    4300088: FenceBlock.097
+    4300090: FenceBlock.096
+    4300092: Fence Guard.017
+    4300094: Fence Guard.016
+    4300096: Fence Guard.015
+    4300098: Fence Guard.014
+    4300100: FenceBlock.095
+    4300102: FenceBlock.094
+    4300104: FenceBlock.093
+    4300106: FenceBlock.092
+    4300108: FenceBlock.091
+    4300110: FenceBlock.090
+    4300112: FenceBlock.089
+    4300114: FenceBlock.088
+    4300116: FenceBlock.087
+    4300118: FenceBlock.086
+    4300120: FenceBlock.085
+    4300122: FenceBlock.084
+    4300124: FenceBlock.083
+    4300126: FenceBlock.082
+    4300128: FenceBlock.081
+    4300130: FenceBlock.080
+    4300132: FenceBlock.079
+    4300134: FenceBlock.078
+    4300136: FenceBlock.077
+    4300138: FenceBlock.076
+    4300140: FenceBlock.075
+    4300142: FenceBlock.074
+    4300144: FenceBlock.073
+    4300146: FenceBlock.072
+    4300148: Fence Guard.013
+    4300150: Fence Guard.012
+    4300152: Fence Guard.011
+    4300154: Fence Guard.010
+    4300156: FenceBlock.071
+    4300158: FenceBlock.070
+    4300160: FenceBlock.069
+    4300162: FenceBlock.068
+    4300164: FenceBlock.067
+    4300166: FenceBlock.066
+    4300168: FenceBlock.065
+    4300170: FenceBlock.064
+    4300172: FenceBlock.063
+    4300174: FenceBlock.062
+    4300176: FenceBlock.061
+    4300178: FenceBlock.060
+    4300180: FenceBlock.051
+    4300182: FenceBlock.049
+    4300184: FenceBlock.048
+    4300186: Fence Guard.008
+    4300188: Fence Guard.009
+    4300190: FenceBlock.059
+    4300192: FenceBlock.058
+    4300194: FenceBlock.057
+    4300196: FenceBlock.056
+    4300198: FenceBlock.055
+    4300200: FenceBlock.054
+    4300202: FenceBlock.047
+    4300204: FenceBlock.046
+    4300206: FenceBlock.045
+    4300208: FenceBlock.044
+    4300210: FenceBlock.043
+    4300212: FenceBlock.042
+    4300214: FenceBlock.041
+    4300216: FenceBlock.040
+    4300218: FenceBlock.039
+    4300220: FenceBlock.038
+    4300222: FenceBlock.037
+    4300224: FenceBlock.036
+    4300226: Fence Guard.007
+    4300228: Fence Guard.006
+    4300230: Fence Guard.005
+    4300232: Fence Guard.004
+    4300234: FenceBlock.035
+    4300236: FenceBlock.034
+    4300238: FenceBlock.033
+    4300240: FenceBlock.032
+    4300242: FenceBlock.031
+    4300244: FenceBlock.030
+    4300246: FenceBlock.029
+    4300248: FenceBlock.028
+    4300250: FenceBlock.027
+    4300252: FenceBlock.026
+    4300254: FenceBlock.025
+    4300256: FenceBlock.024
+    4300258: FenceBlock.011
+    4300260: FenceBlock.010
+    4300262: FenceBlock.009
+    4300264: FenceBlock.008
+    4300266: FenceBlock.007
+    4300268: FenceBlock.006
+    4300270: FenceBlock.005
+    4300272: FenceBlock.004
+    4300274: FenceBlock.003
+    4300276: FenceBlock.002
+    4300278: FenceBlock.001
+    4300280: FenceBlock.000
+    4300282: Fence Guard.003
+    4300284: Fence Guard.002
+    4300286: Fence Guard.001
+    4300288: Fence Guard
+    4300290: FenceBlock.023
+    4300292: FenceBlock.022
+    4300294: FenceBlock.021
+    4300296: FenceBlock.020
+    4300298: FenceBlock.019
+    4300300: FenceBlock.018
+    4300302: FenceBlock.017
+    4300304: FenceBlock.016
+    4300306: FenceBlock.015
+    4300308: FenceBlock.014
+    4300310: FenceBlock.013
+    4300312: FenceBlock.012
+    4300314: Light
   materials:
     importMaterials: 1
     materialName: 0
