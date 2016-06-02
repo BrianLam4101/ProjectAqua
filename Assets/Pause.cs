@@ -5,13 +5,17 @@ using System.Collections;
 using UnityStandardAssets.Characters.FirstPerson;
 
 public class Pause : MonoBehaviour {
-    
 
-	// Use this for initialization
-	void Start () {
+
+    DayNightLighting time;
+
+    // Use this for initialization
+    void Start () {
         PauseGame();
+        time = GameObject.Find("Sun").GetComponent<DayNightLighting>();
         GameObject.Find("FadeBlack").SetActive(false);
         GameObject.Find("Player").GetComponent<FirstPersonController>().enabled = false;
+        GameObject.Find("daysLast").GetComponent<Text>().text = ("You Lasted " + ((int)(time.time / time.dayDuration)).ToString() + " Days");
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
     }
