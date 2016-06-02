@@ -59,6 +59,7 @@ public class Corn : Appliance {
         if (waterLevel > 0) {
             waterLevel -= 100 / corns.Length;
             waterHolder.hunger += hungerUp;
+            AudioSource.PlayClipAtPoint(Resources.Load<AudioClip>("Sounds/eating"), transform.position);
         }
     }
 }

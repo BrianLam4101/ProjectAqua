@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class Bed : Appliance {
@@ -6,10 +7,12 @@ public class Bed : Appliance {
     StatHolder statHolder;
     DayNightLighting time;
     public float energyUp;
+    Image fadeBlack;
 
     void Start() {
         statHolder = GameObject.Find("WaterLevel").GetComponent<StatHolder>();
         time = GameObject.Find("Sun").GetComponent<DayNightLighting>();
+        fadeBlack = GameObject.Find("FadeBlack").GetComponent<Image>();
     }
 
     public override void appUse() {
@@ -22,5 +25,17 @@ public class Bed : Appliance {
 
         time.time += timeDiffrence;
         time.timeOfDay += timeDiffrence;
+
+        StartCoroutine("fadeDelayed", 0.1f);
+    }
+
+    IEnumerator fadeDelayed (float delay) {
+        fadeBlack.color = Color.black;
+        Color c = fadeBlack.color;
+        while (fadeBlack.color.a > 0) {
+            fadeBlack.color = c;
+            c.a -= 0.1f;
+            yield return new WaitForSeconds(delay);
+        }
     }
 }

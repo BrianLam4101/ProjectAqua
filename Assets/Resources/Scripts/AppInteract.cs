@@ -13,6 +13,7 @@ public class AppInteract : Appliance {
     public float hungerUp;
 
     private AudioClip[] dripSound;
+    private GameObject[] pourSound;
 
     private float timer = 0;
 
@@ -21,6 +22,7 @@ public class AppInteract : Appliance {
         water_pref = Resources.Load<GameObject>("water_temp");
         faucet = transform.parent.Find("FAUCET");
         dripSound = Resources.LoadAll<AudioClip>("Sounds/WaterDrop");
+        pourSound = Resources.LoadAll<GameObject>("Sounds/WaterPouring");
     }
 
     void FixedUpdate() {
@@ -62,9 +64,17 @@ public class AppInteract : Appliance {
 
     public override void appUse()
     {
-        if (on > 0)
+        if (on > 0) {
             on = 0;
-        else
+            if (transform.FindChild("PourSound") != null)
+                Destroy(transform.FindChild("PourSound").gameObject);
+        }
+        else {
             on = 1;
+            GameObject audio = Instantiate<GameObject>(pourSound[Random.Range(0, pourSound.Length)]);
+            audio.transform.SetParent(transform);
+            audio.transform.position = transform.position;
+            audio.name = "PourSound";
+        }
     }
 }

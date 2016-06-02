@@ -8,6 +8,7 @@ public class Toilet : Appliance {
     private GameObject water_pref;
     StatHolder waterHolder;
     public float bladderUp;
+    public AudioClip flushSound;
     
     private float timer = 0;
 
@@ -30,6 +31,7 @@ public class Toilet : Appliance {
         if (!(timer > Time.fixedTime) && waterHolder.wasteWater(waterUsage)) {
             timer = Time.fixedTime + 2;
             waterHolder.bladder += bladderUp;
+            AudioSource.PlayClipAtPoint(flushSound, transform.position);
         }
     }
 }

@@ -25,7 +25,7 @@ public class playAnimation : MonoBehaviour {
             frame++;
             if (frame >= images.Length)
                 frame = 0;
-            delay += 0.2f;
+            delay = Time.fixedTime + 0.2f;
         }
     }
 }

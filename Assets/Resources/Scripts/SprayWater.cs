@@ -5,6 +5,7 @@ public class SprayWater : MonoBehaviour {
 
     GameObject water;
     StatHolder waterHolder;
+    public AudioClip spraySound;
 
     // Use this for initialization
     void Start () {
@@ -20,6 +21,14 @@ public class SprayWater : MonoBehaviour {
             drop.transform.position = gameObject.transform.position + transform.forward * 0.5f + transform.up * -0.3f + transform.right * 0.2f;
             drop.transform.rotation = gameObject.transform.rotation;
             drop.GetComponent<Rigidbody>().AddForce(transform.TransformDirection(Vector3.forward) * 10, ForceMode.VelocityChange);
+            if (transform.FindChild("SpraySound(Clone)") == null) {
+                GameObject audio = Instantiate<GameObject>(Resources.Load<GameObject>("Sounds/SpraySound"));
+                audio.transform.SetParent(transform);
+                audio.transform.position = transform.position;
+            }
+        } else {
+            if (transform.FindChild("SpraySound(Clone)") != null)
+                Destroy(transform.FindChild("SpraySound(Clone)").gameObject);
         }
 	}
 }
