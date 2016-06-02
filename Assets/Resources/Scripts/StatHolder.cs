@@ -80,10 +80,10 @@ public class StatHolder : MonoBehaviour {
         bladder = 100;
         thirst = 100;
 
-        hungerPerSec = 0.5f;
+        hungerPerSec = 0.4f;
         hygienePerSec = 0.3f;
-        energyPerSec = 0.5f;
-        bladderPerSec = 0.6f;
+        energyPerSec = 0.4f;
+        bladderPerSec = 0.5f;
         thirstPerSec = 1f;
 
         player = GameObject.Find("Player");
