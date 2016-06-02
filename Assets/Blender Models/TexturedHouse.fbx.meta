@@ -166,6 +166,13 @@ ModelImporter:
     100316: FenceBlock.112
     100318: FenceBlock.113
     100320: Light
+    100322: GlassWindow
+    100324: WindowFrame
+    100326: GlassWindow.001
+    100328: Plane
+    100330: WindowFrame.001
+    100332: GlassWindow.002
+    100334: WindowFrame.002
     400000: BathDoor
     400002: BathDoor.001
     400004: BedRoomWall
@@ -327,6 +334,13 @@ ModelImporter:
     400316: FenceBlock.112
     400318: FenceBlock.113
     400320: Light
+    400322: GlassWindow
+    400324: WindowFrame
+    400326: GlassWindow.001
+    400328: Plane
+    400330: WindowFrame.001
+    400332: GlassWindow.002
+    400334: WindowFrame.002
     2300000: BathDoor
     2300002: BathDoor.001
     2300004: BedRoomWall
@@ -485,6 +499,13 @@ ModelImporter:
     2300310: FenceBlock.112
     2300312: FenceBlock.113
     2300314: Light
+    2300316: GlassWindow
+    2300318: WindowFrame
+    2300320: GlassWindow.001
+    2300322: Plane
+    2300324: WindowFrame.001
+    2300326: GlassWindow.002
+    2300328: WindowFrame.002
     3300000: BathDoor
     3300002: BathDoor.001
     3300004: BedRoomWall
@@ -643,6 +664,13 @@ ModelImporter:
     3300310: FenceBlock.112
     3300312: FenceBlock.113
     3300314: Light
+    3300316: GlassWindow
+    3300318: WindowFrame
+    3300320: GlassWindow.001
+    3300322: Plane
+    3300324: WindowFrame.001
+    3300326: GlassWindow.002
+    3300328: WindowFrame.002
     4300000: BedRoomWall.003
     4300002: BedRoomWall.002
     4300004: BedRoomWall
@@ -801,6 +829,13 @@ ModelImporter:
     4300310: FenceBlock.013
     4300312: FenceBlock.012
     4300314: Light
+    4300316: WindowFrame
+    4300318: GlassWindow
+    4300320: Plane
+    4300322: WindowFrame.001
+    4300324: GlassWindow.001
+    4300326: WindowFrame.002
+    4300328: GlassWindow.002
   materials:
     importMaterials: 1
     materialName: 0
