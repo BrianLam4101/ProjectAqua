@@ -12,12 +12,15 @@ public class AppInteract : Appliance {
     public float hygieneUp;
     public float hungerUp;
 
+    private AudioClip[] dripSound;
+
     private float timer = 0;
 
     void Start() {
         waterHolder = GameObject.Find("WaterLevel").GetComponent<StatHolder>();
         water_pref = Resources.Load<GameObject>("water_temp");
         faucet = transform.parent.Find("FAUCET");
+        dripSound = Resources.LoadAll<AudioClip>("Sounds/WaterDrop");
     }
 
     void FixedUpdate() {
@@ -43,6 +46,7 @@ public class AppInteract : Appliance {
                     water.transform.localScale = water.transform.localScale * waterScale;
                     water.transform.SetParent(faucet);
                     water.transform.position = faucet.position + new Vector3(0, -.11f, 0);
+                    AudioSource.PlayClipAtPoint(dripSound[Random.Range(0, dripSound.Length)], transform.position, Random.Range(0.75f, 1f));
                     timer = 1 - on;
                 }
                 else
