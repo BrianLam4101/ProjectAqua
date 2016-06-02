@@ -57,6 +57,9 @@ public class StatHolder : MonoBehaviour {
     public float hygienePerSec;
     public float energyPerSec;
     public float bladderPerSec;
+
+    private GameObject player;
+    private Vector3 prevPos;
     // Use this for initialization
     void Start () {
         hunger = 50;
@@ -69,7 +72,8 @@ public class StatHolder : MonoBehaviour {
         energyPerSec = 0.5f;
         bladderPerSec = 0.6f;
 
-
+        player = GameObject.Find("Player");
+        prevPos = player.transform.position;
     }
 
     public bool wasteWater(float amount) {
@@ -82,12 +86,17 @@ public class StatHolder : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        hunger -= Time.deltaTime * .5f * (energy < 50 ? 1.5f : 1);
-        hygiene -= Time.deltaTime * .3f * (bladder < 33 ? 2.5f : 1);
-        energy -= Time.deltaTime * .5f * (hunger < 50 ? 2 : 1);
-        bladder -= Time.deltaTime * .6f * (hunger > 75 ? 1.5f : 1);
+        hunger -= Time.deltaTime * .5f * (energy < 50 ? (energy < 5 ? 2f : 1.5f) : 1);
+        hygiene -= Time.deltaTime * .3f * (bladder < 33 ? (bladder < 5 ? 5f : 2.5f) : 1);
+        energy -= Time.deltaTime * .5f * (hunger < 50 ? (hunger < 5 ? 4 : 2) : 1);
+        bladder -= Time.deltaTime * .6f * (hunger > 75 ? (hunger > 95 ? 3f : 1.5f) : 1);
         
         happiness = (hunger + hygiene + energy + bladder) / 4;
 
+    }
+
+    void FixedUpdate() {
+        energy -= Vector3.Distance(prevPos, player.transform.position) * 0.1f;
+        prevPos = player.transform.position;
     }
 }

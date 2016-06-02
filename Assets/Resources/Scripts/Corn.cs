@@ -51,7 +51,7 @@ public class Corn : Appliance {
     void OnCollisionStay(Collision collision) {
         if (waterLevel < 76 && collision.collider.CompareTag("Water")) {
             Destroy(collision.gameObject);
-            waterLevel += 1;
+            waterLevel += 0.5f;
         }
     }
 
