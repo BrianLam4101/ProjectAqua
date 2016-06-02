@@ -59,10 +59,10 @@ public class StatHolder : MonoBehaviour {
     public float bladderPerSec;
     // Use this for initialization
     void Start () {
-        hunger = 100;
-        energy = 100;
-        hygiene = 100;
-        bladder = 100;
+        hunger = 50;
+        energy = 90;
+        hygiene = 80;
+        bladder = 60;
 
         hungerPerSec = 0.5f;
         hygienePerSec = 0.3f;
@@ -82,10 +82,10 @@ public class StatHolder : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        hunger -= Time.deltaTime * .5f;
-        hygiene -= Time.deltaTime * .3f;
-        energy -= Time.deltaTime * .5f;
-        bladder -= Time.deltaTime * .6f;
+        hunger -= Time.deltaTime * .5f * (energy < 50 ? 1.5f : 1);
+        hygiene -= Time.deltaTime * .3f * (bladder < 33 ? 2.5f : 1);
+        energy -= Time.deltaTime * .5f * (hunger < 50 ? 2 : 1);
+        bladder -= Time.deltaTime * .6f * (hunger > 75 ? 1.5f : 1);
         
         happiness = (hunger + hygiene + energy + bladder) / 4;
 
