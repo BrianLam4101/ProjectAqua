@@ -76,8 +76,8 @@ public class StatHolder : MonoBehaviour {
         hygiene -= Time.deltaTime * .15f;
         energy -= Time.deltaTime * .25f;
         bladder -= Time.deltaTime * .3f;
-
-        happiness = hunger + hygiene + energy + bladder / 4;
+        
+        happiness = (hunger + hygiene + energy + bladder) / 4;
 
     }
 }
