@@ -70,13 +70,15 @@ public class StatHolder : MonoBehaviour {
 
     private GameObject player;
     private Vector3 prevPos;
+
+    public GameObject gameOverScreen;
     // Use this for initialization
     void Start () {
-        hunger = 50;
-        energy = 90;
-        hygiene = 80;
-        bladder = 60;
-        thirst = 75;
+        hunger = 100;
+        energy = 100;
+        hygiene = 100;
+        bladder = 100;
+        thirst = 100;
 
         hungerPerSec = 0.5f;
         hygienePerSec = 0.3f;
@@ -106,6 +108,9 @@ public class StatHolder : MonoBehaviour {
 
         happiness = (hunger + hygiene + energy + bladder) / 4;
 
+        if (hunger <= 0 || thirst <= 0) {
+            gameOverScreen.SetActive(true);
+        }
     }
 
     void FixedUpdate() {
