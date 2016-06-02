@@ -20,6 +20,21 @@ ModelImporter:
     100024: Wall.001
     100026: Wall.002
     100028: Wall.003
+    100030: Light.000
+    100032: Light.001
+    100034: Light.002
+    100036: Light.003
+    100038: Light.004
+    100040: Light.005
+    100042: Roof
+    100044: RoofSideLeft
+    100046: RoofSideRight
+    100048: RoofSideLeft.001
+    100050: Ceiling
+    100052: Cube
+    100054: Cube.001
+    100056: RoofBack
+    100058: RoofFront
     400000: BathDoor
     400002: BathDoor.001
     400004: BedRoomWall
@@ -35,6 +50,21 @@ ModelImporter:
     400024: Wall.001
     400026: Wall.002
     400028: Wall.003
+    400030: Light.000
+    400032: Light.001
+    400034: Light.002
+    400036: Light.003
+    400038: Light.004
+    400040: Light.005
+    400042: Roof
+    400044: RoofSideLeft
+    400046: RoofSideRight
+    400048: RoofSideLeft.001
+    400050: Ceiling
+    400052: Cube
+    400054: Cube.001
+    400056: RoofBack
+    400058: RoofFront
     2300000: BathDoor
     2300002: BathDoor.001
     2300004: BedRoomWall
@@ -47,6 +77,21 @@ ModelImporter:
     2300018: Wall.001
     2300020: Wall.002
     2300022: Wall.003
+    2300024: Light.000
+    2300026: Light.001
+    2300028: Light.002
+    2300030: Light.003
+    2300032: Light.004
+    2300034: Light.005
+    2300036: Roof
+    2300038: RoofSideLeft
+    2300040: RoofSideRight
+    2300042: RoofSideLeft.001
+    2300044: Ceiling
+    2300046: Cube
+    2300048: Cube.001
+    2300050: RoofBack
+    2300052: RoofFront
     3300000: BathDoor
     3300002: BathDoor.001
     3300004: BedRoomWall
@@ -59,6 +104,21 @@ ModelImporter:
     3300018: Wall.001
     3300020: Wall.002
     3300022: Wall.003
+    3300024: Light.000
+    3300026: Light.001
+    3300028: Light.002
+    3300030: Light.003
+    3300032: Light.004
+    3300034: Light.005
+    3300036: Roof
+    3300038: RoofSideLeft
+    3300040: RoofSideRight
+    3300042: RoofSideLeft.001
+    3300044: Ceiling
+    3300046: Cube
+    3300048: Cube.001
+    3300050: RoofBack
+    3300052: RoofFront
     4300000: BedRoomWall.003
     4300002: BedRoomWall.002
     4300004: BedRoomWall
@@ -71,6 +131,21 @@ ModelImporter:
     4300018: Wall.002
     4300020: Wall.001
     4300022: Floor
+    4300024: Light.005
+    4300026: Light.000
+    4300028: Light.004
+    4300030: Light.003
+    4300032: Light.002
+    4300034: Roof
+    4300036: Light.001
+    4300038: RoofSideRight
+    4300040: RoofSideLeft
+    4300042: RoofSideLeft.001
+    4300044: Ceiling
+    4300046: Cube
+    4300048: Cube.001
+    4300050: RoofFront
+    4300052: RoofBack
   materials:
     importMaterials: 1
     materialName: 0
